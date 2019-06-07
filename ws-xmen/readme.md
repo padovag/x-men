@@ -15,7 +15,8 @@ Api criada para ser consumida pelo aplicativo Android.
 * Instale o MySQL
 ```brew install mysql```
 
-#### Preparar o ambiente 
+#### Preparar o ambiente
+* Altere o `.env` com as suas credenciais do banco de dados
 * Rode as migrations ```php artisan migrate```
 * Rode os seeders ```php artisan db:seed```
 
