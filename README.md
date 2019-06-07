@@ -20,9 +20,11 @@ mostrar sua marca, deve ser mostrada por apenas 3 segundos.
 
 **BD** – campos login e senha. Cadastre previamente 3 usuários. Novos usuários serão
 cadastrados durante apresentação, diretamente no BD.
+
 **Sistema Web** – serviços de autenticação que recebam do app os campos login e senha e
 consultem o BD para identificação do usuário. Resposta positiva ou negativa deve ser fornecida
 ao app.
+
 **App** – deve fornecer uma maneira para capturar informações do usuário de Login e Senha,
 consumir o serviço Web do sistema e apresentar em um AlertDialog a mensagem de “Login ou
 Senha incorretos” em caso de identificação negativa.
@@ -37,9 +39,11 @@ por habilidades, e sair.
 
 **BD** – guardar as informações nome do mutante, habilidades do mutante, foto do mutante
 e nome do usuário que cadastrou o mutante. 
+
 **Sistema Web** – fornecer os serviços Web para cadastro do mutante, bem como verificar se
 aquele mutante já existe na base (em caso positivo, não permitir duplicidade). Retorno do serviço
 deve informar se o usuário foi cadastrado corretamente ou se houve erro e qual erro ocorreu.
+
 **App** – deve permitir ao usuário cadastrar apenas novos mutantes, não permitindo o
 cadastro de um mutante de mesmo nome. Além do nome, o usuário deve cadastrar habilidades
 conhecidas daquele mutante (mínimo 1, máximo 3) e associar uma foto a este mutante (acessar
@@ -51,6 +55,7 @@ AlertDialog informando o resultado desta operação (dado pelo retorno do servi�
 
 **Sistema Web** – fornece os serviços Web para execução da pesquisa de todos os mutantes
 na base de dados do servidor, edição e exclusão de um determinado mutante.
+
 **App** – deve mostrar em uma lista a foto em tamanho pequeno, bem como o nome, dos
 mutantes recebidos pelo serviço Web e atualmente cadastrados na base do servidor. Ao clicar
 em um mutante, uma nova activity é mostrada trazendo maiores informações daquele mutante,
@@ -63,6 +68,7 @@ informações na base, ou excluindo este mutante da base.
 **Sistema Web** – fornece os serviços Web para pesquisa de mutantes por habilidade (apenas
 uma habilidade por vez). Retorna o nome dos mutantes com aquela habilidade (usar Like na
 statement de SQL).
+
 **App** – deve permitir que o usuário pesquise mutantes por uma certa habilidade. A lista de
 resposta, com apenas os nomes dos mutantes, deve ser mostrada na tela.
 
