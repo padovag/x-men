@@ -19,10 +19,10 @@ class UsuarioController extends Controller {
         $usuario->email = $request['email'];
         $usuario->senha = $request['senha'];
 
-        $saved = $usuario->save();
-        $response = $saved ? 'Usuario salvo com sucesso' : 'Usuario não pode ser salvo';
+        $salvo = $usuario->save();
+        $resposta = $salvo ? 'Usuario salvo com sucesso' : 'Usuario não pode ser salvo';
 
-        return response()->json(['message' => $response, 'id' => $usuario->id]);
+        return response()->json(['message' => $resposta, 'id' => $usuario->id]);
     }
 
     /**

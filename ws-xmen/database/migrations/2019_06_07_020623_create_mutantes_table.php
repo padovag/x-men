@@ -6,24 +6,19 @@ use Illuminate\Database\Migrations\Migration;
 
 class CreateMutantesTable extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
     public function up()
     {
         Schema::create('mutantes', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->unsignedInteger('id')->autoIncrement();
+            $table->string('nome');
+            $table->string('habilidade');
+            $table->string('foto');
+            $table->unsignedInteger('usuario_id');
+            $table->foreign('usuario_id')->references('id')->on('usuarios');
             $table->timestamps();
         });
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
     public function down()
     {
         Schema::dropIfExists('mutantes');

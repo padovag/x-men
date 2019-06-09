@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b6ef2c9-745e-4b9a-b472-3f9aa7c6310f" name="Default Changelist" comment="" />
+    <list default="true" id="1b6ef2c9-745e-4b9a-b472-3f9aa7c6310f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/813cd010-c831-4406-886a-53ab0220ac67.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/813cd010-c831-4406-886a-53ab0220ac67.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MutanteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MutanteController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UsuarioController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UsuarioController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Mutante.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Mutante.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Usuario.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Usuario.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_06_07_020600_create_mutantes_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_06_07_020623_create_usuarios_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,19 +58,28 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_07_020623_create_usuarios_table.php">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_07_020600_create_usuarios_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+            <state relative-caret-position="269">
+              <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_07_020623_create_mutantes_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="166">
+              <caret line="13" column="27" lean-forward="true" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UsuarioController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+            <state relative-caret-position="409">
+              <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
               <folding>
                 <element signature="e#40#56#0#PHP" expanded="true" />
               </folding>
@@ -70,8 +90,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/api.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="16" column="52" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
+            <state relative-caret-position="346">
+              <caret line="18" column="52" lean-forward="true" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -79,7 +99,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.env">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
+            <state relative-caret-position="270">
               <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
             </state>
           </provider>
@@ -88,8 +108,38 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/813cd010-c831-4406-886a-53ab0220ac67/console.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="23" lean-forward="true" selection-start-column="23" selection-end-column="23" />
+            <state relative-caret-position="63">
+              <caret line="3" column="77" lean-forward="true" selection-start-line="3" selection-start-column="77" selection-end-line="3" selection-end-column="77" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MutanteController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="214">
+              <caret line="17" column="51" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="51" />
+              <folding>
+                <element signature="e#40#56#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Mutante.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -97,8 +147,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Usuario.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+            <state relative-caret-position="189">
+              <caret line="9" column="31" lean-forward="true" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -120,13 +170,18 @@
       <list>
         <option value="$PROJECT_DIR$/database/migrations/2019_06_07_020623_create_usuarios_table.php" />
         <option value="$PROJECT_DIR$/database/.gitignore" />
-        <option value="$PROJECT_DIR$/app/Mutante.php" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_06_07_020600_create_mutantes_table.php" />
         <option value="$PROJECT_DIR$/routes/api.php" />
         <option value="$PROJECT_DIR$/app/Usuario.php" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/813cd010-c831-4406-886a-53ab0220ac67/console.sql" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/UsuarioController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/MutanteController.php" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/813cd010-c831-4406-886a-53ab0220ac67/console.sql" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_06_07_020600_create_usuarios_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_06_07_020623_create_mutantes_table.php" />
+        <option value="$PROJECT_DIR$/app/Mutante.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -264,11 +319,6 @@
               <item name="Http" type="462c0819:PsiDirectoryNode" />
               <item name="Controllers" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="ws-xmen" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ws-xmen" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -318,29 +368,29 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9635000" />
+    <option name="totallyTimeSpent" value="13753000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="811" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6497065" visible="true" weight="0.25299507" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6516634" visible="true" weight="0.18957011" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info id="Database" order="3" sideWeight="0.35029355" side_tool="true" visible="true" weight="0.25299507" />
-      <window_info active="true" anchor="bottom" id="Database Console" visible="true" weight="0.27311522" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.43243244" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info id="Database" order="3" sideWeight="0.3483366" side_tool="true" visible="true" weight="0.18957011" />
+      <window_info anchor="bottom" id="Database Console" order="0" visible="true" weight="0.27311522" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" />
+      <window_info anchor="bottom" id="Run" order="3" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.43243244" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -356,20 +406,8 @@
     <entry file="file://$PROJECT_DIR$/webpack.mix.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/User.php" />
+    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
     <entry file="file://$PROJECT_DIR$/.editorconfig">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -377,13 +415,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
           <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Mutante.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
@@ -427,46 +458,84 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
+        <state relative-caret-position="270">
           <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/api.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="52" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/813cd010-c831-4406-886a-53ab0220ac67/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="23" lean-forward="true" selection-start-column="23" selection-end-column="23" />
+        <state relative-caret-position="346">
+          <caret line="18" column="52" lean-forward="true" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Usuario.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_07_020623_create_usuarios_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+        <state relative-caret-position="189">
+          <caret line="9" column="31" lean-forward="true" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UsuarioController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+        <state relative-caret-position="409">
+          <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
           <folding>
             <element signature="e#40#56#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Schema/ColumnDefinition.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MutanteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="17" column="51" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="51" />
+          <folding>
+            <element signature="e#40#56#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_07_020600_create_usuarios_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_07_020623_create_mutantes_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="13" column="27" lean-forward="true" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/813cd010-c831-4406-886a-53ab0220ac67/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="77" lean-forward="true" selection-start-line="3" selection-start-column="77" selection-end-line="3" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Mutante.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
         </state>
       </provider>
     </entry>

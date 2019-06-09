@@ -7,35 +7,21 @@ use Illuminate\Http\Request;
 
 class MutanteController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
-    {
-        //
+    public function index() {
+        $mutantes = Mutante::all();
+        return response()->json(['mutantes' => $mutantes]);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
+    public function store(Request $request) {
+        $mutante = new Mutante();
+        $mutante->nome = $request['nome'];
+        $mutante->habilidade = $request['habilidade'];
+        $mutante->foto = $request['foto'];
+        $mutante->usuario_id = $request['usuario_id'];
+        $salvo = $mutante->save();
+        $resposta = $salvo ? 'Mutante salvo com sucesso' : 'Não foi possível salvar o mutante';
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
+        return response()->json(['mensagem' => $resposta, 'mutante_id' => $mutante->id]);
     }
 
     /**
