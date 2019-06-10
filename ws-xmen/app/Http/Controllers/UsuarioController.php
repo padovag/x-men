@@ -5,68 +5,50 @@ namespace App\Http\Controllers;
 use App\Usuario;
 use Illuminate\Http\Request;
 
-class UsuarioController extends Controller {
+class UsuarioController extends ApiController {
     public function index() {
-        $usuarios = Usuario::all();
-        return response()->json(['usuarios' => $usuarios]);
-
+        try {
+            $usuarios = Usuario::all();
+            return $this->enviaRespostaSucesso(['usuarios' => $usuarios]);
+        } catch (\Exception $exception) {
+            return $this->enviaRespostaErro($exception->getMessage());
+        }
     }
 
     public function store(Request $request) {
-        $usuario = new Usuario();
-        $usuario->nome = $request['nome'];
-        $usuario->usuario = $request['usuario'];
-        $usuario->email = $request['email'];
-        $usuario->senha = $request['senha'];
+        try {
+            $usuario = new Usuario();
+            $usuario->nome = $request['nome'];
+            $usuario->usuario = $request['usuario'];
+            $usuario->email = $request['email'];
+            $usuario->senha = $request['senha'];
 
-        $salvo = $usuario->save();
-        $resposta = $salvo ? 'Usuario salvo com sucesso' : 'Usuario não pode ser salvo';
-
-        return response()->json(['message' => $resposta, 'id' => $usuario->id]);
+            $salvo = $usuario->save();
+            return $salvo ? $this->enviaRespostaSucesso(['usuario' => $usuario]) : $this->enviaRespostaErro('Usuário não pôde ser salvo');
+        } catch (\Exception $exception) {
+            return $this->enviaRespostaErro($exception->getMessage());
+        }
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Usuario  $usuario
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Usuario $usuario)
-    {
-        //
+    public function auth(Request $request) {
+        $usuario = $this->findByUsuario($request['usuario']);
+        if (empty($usuario)) {
+            return $this->enviaRespostaErro('Usuario não encontrado');
+        }
+
+        $autorizado = $this->verificaSenhaUsuario($usuario, $request['senha']);
+        if (!$autorizado) {
+            return $this->enviaRespostaErro('Senha incorreta', 401);
+        }
+
+        return $this->enviaRespostaSucesso(['autorizado' => $autorizado, 'usuario' => $usuario]);
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Usuario  $usuario
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Usuario $usuario)
-    {
-        //
+    public function findByUsuario(string $usuario) {
+        return Usuario::where('usuario', $usuario)->first();
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Usuario  $usuario
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, Usuario $usuario)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Usuario  $usuario
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(Usuario $usuario)
-    {
-        //
+    private function verificaSenhaUsuario($usuario, $senha) {
+        return ($senha == $usuario->senha);
     }
 }

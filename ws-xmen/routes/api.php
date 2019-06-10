@@ -14,6 +14,7 @@ use Illuminate\Http\Request;
 */
 
 Route::get('/usuarios', 'UsuarioController@index');
+Route::get('/login', 'UsuarioController@auth');
 Route::post('/usuarios', 'UsuarioController@store');
 Route::get('/mutantes', 'MutanteController@index');
 Route::post('/mutantes', 'MutanteController@store');
