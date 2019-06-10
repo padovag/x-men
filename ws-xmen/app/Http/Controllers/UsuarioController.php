@@ -31,7 +31,7 @@ class UsuarioController extends ApiController {
     }
 
     public function auth(Request $request) {
-        $usuario = $this->findByUsuario($request['usuario']);
+        $usuario = $this->buscaPorUsuario($request['usuario']);
         if (empty($usuario)) {
             return $this->enviaRespostaErro('Usuario não encontrado');
         }
@@ -44,7 +44,7 @@ class UsuarioController extends ApiController {
         return $this->enviaRespostaSucesso(['autorizado' => $autorizado, 'usuario' => $usuario]);
     }
 
-    public function findByUsuario(string $usuario) {
+    public function buscaPorUsuario(string $usuario) {
         return Usuario::where('usuario', $usuario)->first();
     }
 

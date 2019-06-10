@@ -10,8 +10,8 @@ class CreateMutantesTable extends Migration
     {
         Schema::create('mutantes', function (Blueprint $table) {
             $table->unsignedInteger('id')->autoIncrement();
-            $table->string('nome');
-            $table->string('habilidade');
+            $table->string('nome')->unique();
+            $table->text('habilidade');
             $table->string('foto');
             $table->unsignedInteger('usuario_id');
             $table->foreign('usuario_id')->references('id')->on('usuarios');
