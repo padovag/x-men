@@ -2,18 +2,22 @@ package com.example.xmen;
 
 class Mutante {
     public String nome;
-    public String habilidades;
+    public String habilidade;
     public String foto;
     public int usuario_id;
 
-    public Mutante(String nome, String habilidades, String foto, int usuario_id) {
+    public Mutante() {
+
+    }
+
+    public Mutante(String nome, String habilidade, String foto, int usuario_id) {
         this.nome = nome;
-        this.habilidades = habilidades;
+        this.habilidade = habilidade;
         this.foto = foto;
         this.usuario_id = usuario_id;
     }
 
     public String toString() {
-        return nome + "\n" + habilidades;
+        return nome + "\n" + habilidade;
     }
 }

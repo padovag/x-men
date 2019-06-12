@@ -14,6 +14,8 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.ArrayList;
+
 public class ListarActivity extends AppCompatActivity {
 
     @Override
@@ -21,20 +23,10 @@ public class ListarActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_listar);
 
-        Mutante mutante1 = new Mutante("giulia", "aaa", "aa", 1);
-        Mutante mutante2 = new Mutante("aaaa", "aaa", "aa", 1);
-
-        criaListView(mutante1, mutante2);
+        buscaMutantes();
     }
 
-    private void criaListView(Mutante mutante1, Mutante mutante2) {
-        ListView listaMutantes = (ListView) findViewById(R.id.lista);
-        String[] mutantes = new String[]{mutante1.toString(), mutante2.toString()};
-        ArrayAdapter<String> array = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, mutantes);
-        listaMutantes.setAdapter(array);
-    }
-
-    public void buscaMutantes() {
+    private void buscaMutantes() {
         String url = "http://10.0.2.2:8000/api/mutantes";
 
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest
@@ -43,10 +35,9 @@ public class ListarActivity extends AppCompatActivity {
                     @Override
                     public void onResponse(JSONObject response) {
                         try {
-                            JSONArray mutantes = response.getJSONArray("mutantes");
-                            for(Object mutante : mutantes) {
-
-                            }
+                            ArrayList<Mutante> mutantes = parseResponse(response);
+                            ArrayList<String> textoMutantes = getMutanteTextToInsertOnList(mutantes);
+                            criaListView(textoMutantes);
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
@@ -60,5 +51,36 @@ public class ListarActivity extends AppCompatActivity {
                 });
 
         MySingleton.getInstance(this).addToRequestQueue(jsonObjectRequest);
+    }
+
+    private ArrayList<Mutante> parseResponse(JSONObject response) throws JSONException {
+        ArrayList<Mutante> mutantes = new ArrayList();
+        JSONArray mutantesJson = response.getJSONArray("mutantes");
+
+        for (int i = 0; i < mutantesJson.length(); i++) {
+            JSONObject mutanteJson = mutantesJson.getJSONObject(i);
+            Mutante mutante = new Mutante();
+            mutante.nome = mutanteJson.get("nome").toString();
+            mutante.habilidade = mutanteJson.get("habilidade").toString();
+            mutante.foto = mutanteJson.get("foto").toString();
+            mutante.usuario_id = Integer.parseInt(mutanteJson.get("usuario_id").toString());
+            mutantes.add(mutante);
+        }
+
+        return mutantes;
+    }
+
+    private ArrayList<String> getMutanteTextToInsertOnList(ArrayList<Mutante> mutantes) {
+        ArrayList<String> textoMutantes = new ArrayList<>();
+        for (Mutante mutante : mutantes) {
+            textoMutantes.add(mutante.toString());
+        }
+        return textoMutantes;
+    }
+
+    private void criaListView(ArrayList<String> mutantes) {
+        ListView listaMutantes = (ListView) findViewById(R.id.lista);
+        ArrayAdapter<String> array = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, mutantes);
+        listaMutantes.setAdapter(array);
     }
 }
