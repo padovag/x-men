@@ -14,8 +14,8 @@ public class DashboardActivity extends AppCompatActivity {
     }
 
     public void onClickListar(View view) {
-//        Intent it = new Intent(this, ListarActivity.class);
-//        startActivity(it);
+        Intent it = new Intent(this, ListarActivity.class);
+        startActivity(it);
     }
 
     public void onClickCadastrar(View view) {

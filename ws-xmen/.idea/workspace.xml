@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b6ef2c9-745e-4b9a-b472-3f9aa7c6310f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../app-xmen/XMen/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app-xmen/XMen/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app-xmen/XMen/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app-xmen/XMen/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app-xmen/XMen/app/src/main/java/com/example/xmen/ListarActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app-xmen/XMen/app/src/main/java/com/example/xmen/ListarActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app-xmen/XMen/app/src/main/java/com/example/xmen/Mutante.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app-xmen/XMen/app/src/main/java/com/example/xmen/Mutante.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app-xmen/XMen/app/src/main/res/layout/activity_listar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app-xmen/XMen/app/src/main/res/layout/activity_listar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_06_07_020623_create_mutantes_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_06_07_020623_create_mutantes_table.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -71,8 +73,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_07_020623_create_mutantes_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
+            <state relative-caret-position="168">
+              <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -98,19 +100,19 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/813cd010-c831-4406-886a-53ab0220ac67/console.sql">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="189">
-              <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+              <caret line="9" column="89" selection-start-line="9" selection-start-column="89" selection-end-line="9" selection-end-column="89" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MutanteController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
+            <state relative-caret-position="548">
               <caret line="49" column="70" selection-start-line="49" selection-start-column="70" selection-end-line="49" selection-end-column="70" />
               <folding>
                 <element signature="e#40#56#0#PHP" expanded="true" />
@@ -132,7 +134,7 @@
         <entry file="file://$PROJECT_DIR$/app/Mutante.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="168">
-              <caret line="8" column="31" lean-forward="true" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+              <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -167,15 +169,15 @@
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_06_07_020600_create_mutantes_table.php" />
         <option value="$PROJECT_DIR$/app/Usuario.php" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/813cd010-c831-4406-886a-53ab0220ac67/console.sql" />
         <option value="$PROJECT_DIR$/app/Mutante.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ApiController.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_06_07_020623_create_mutantes_table.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/UsuarioController.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_06_07_020600_create_usuarios_table.php" />
         <option value="$PROJECT_DIR$/routes/api.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/MutanteController.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2019_06_07_020623_create_mutantes_table.php" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/813cd010-c831-4406-886a-53ab0220ac67/console.sql" />
       </list>
     </option>
   </component>
@@ -287,7 +289,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -317,6 +318,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -359,20 +361,22 @@
       <workItem from="1559871449336" duration="43000" />
       <workItem from="1559871672078" duration="9070000" />
       <workItem from="1560209514514" duration="35000" />
+      <workItem from="1560304621971" duration="714000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27123000" />
+    <option name="totallyTimeSpent" value="27837000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="811" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.65007114" visible="true" weight="0.18957011" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.64746547" visible="true" weight="0.18957011" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info id="Database" order="3" sideWeight="0.3499289" side_tool="true" visible="true" weight="0.18957011" />
-      <window_info anchor="bottom" id="Database Console" order="0" visible="true" weight="0.2517781" />
+      <window_info id="Database" order="3" sideWeight="0.35253456" side_tool="true" visible="true" weight="0.18957011" />
+      <window_info active="true" anchor="bottom" id="Database Console" order="0" visible="true" weight="0.38264582" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" />
       <window_info anchor="bottom" id="Run" order="3" />
@@ -492,13 +496,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_07_020623_create_mutantes_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UsuarioController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -516,13 +513,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/813cd010-c831-4406-886a-53ab0220ac67/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ApiController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -533,7 +523,7 @@
     <entry file="file://$PROJECT_DIR$/app/Mutante.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
-          <caret line="8" column="31" lean-forward="true" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -546,11 +536,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MutanteController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
+        <state relative-caret-position="548">
           <caret line="49" column="70" selection-start-line="49" selection-start-column="70" selection-end-line="49" selection-end-column="70" />
           <folding>
             <element signature="e#40#56#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_07_020623_create_mutantes_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/813cd010-c831-4406-886a-53ab0220ac67/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="89" selection-start-line="9" selection-start-column="89" selection-end-line="9" selection-end-column="89" />
         </state>
       </provider>
     </entry>
