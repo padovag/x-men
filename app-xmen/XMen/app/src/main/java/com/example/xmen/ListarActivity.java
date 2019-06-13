@@ -1,7 +1,10 @@
 package com.example.xmen;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -73,14 +76,26 @@ public class ListarActivity extends AppCompatActivity {
     private ArrayList<String> getMutanteTextToInsertOnList(ArrayList<Mutante> mutantes) {
         ArrayList<String> textoMutantes = new ArrayList<>();
         for (Mutante mutante : mutantes) {
-            textoMutantes.add(mutante.toString());
+            textoMutantes.add(mutante.nome);
         }
         return textoMutantes;
     }
 
     private void criaListView(ArrayList<String> mutantes) {
-        ListView listaMutantes = (ListView) findViewById(R.id.lista);
+        final ListView listaMutantes = (ListView) findViewById(R.id.lista);
         ArrayAdapter<String> array = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, mutantes);
         listaMutantes.setAdapter(array);
+
+        listaMutantes.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
+                Intent it = new Intent(getBaseContext(), MostraMutanteActivity.class);
+                Bundle b = new Bundle();
+                String nomeMutante = (String) listaMutantes.getAdapter().getItem(arg2);
+                b.putString("nome", nomeMutante);
+                it.putExtras(b);
+                startActivity(it);
+            }
+          });
     }
 }
