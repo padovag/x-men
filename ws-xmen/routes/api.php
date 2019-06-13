@@ -19,3 +19,4 @@ Route::post('/usuarios', 'UsuarioController@store');
 Route::get('/mutantes', 'MutanteController@index');
 Route::post('/mutantes', 'MutanteController@store');
 Route::get('/pesquisar', 'MutanteController@search');
+Route::get('/buscaMutantePorNome', 'MutanteController@searchName');
