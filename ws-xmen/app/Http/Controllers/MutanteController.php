@@ -40,6 +40,15 @@ class MutanteController extends ApiController {
         return is_null($mutante_existente);
     }
 
+    public function searchName(Request $request) {
+        try {
+            $mutante = $this->buscaMutantePorNome($request['nome']);
+            return $this->enviaRespostaSucesso(['mutante' => $mutante]);
+        } catch (\Exception $exception) {
+            return $this->enviaRespostaErro($exception->getMessage());
+        }
+    }
+
     private function buscaMutantePorNome(string $nome) {
         return Mutante::where('nome', $nome)->first();
     }
