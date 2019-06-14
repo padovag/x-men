@@ -1,7 +1,9 @@
 package com.example.xmen;
 
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.drawable.BitmapDrawable;
@@ -56,7 +58,12 @@ public class CadastrarActivity extends AppCompatActivity {
         String nome = nomeCampo.getText().toString();
         String habilidade = habilidadeCampo.getText().toString();
 
-        cadastrarMutante(nome, habilidade, "foto não pode ser cadastrada", 1);
+        SharedPreferences preferences = getSharedPreferences("mutantes", Context.MODE_PRIVATE);
+        int usuario_id = preferences.getInt("usuario_id", 1);
+
+
+        preferences.getString("session", "");
+        cadastrarMutante(nome, habilidade, "foto não pode ser cadastrada", usuario_id);
     }
 
     private void cadastrarMutante(String nome, String habilidade, String fotoBase64, int usuario_id) {

@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b6ef2c9-745e-4b9a-b472-3f9aa7c6310f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../app-xmen/XMen/app/src/main/java/com/example/xmen/MostraMutanteActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app-xmen/XMen/app/src/main/java/com/example/xmen/MostraMutanteActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app-xmen/XMen/app/src/main/res/layout/activity_mostra_mutante.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app-xmen/XMen/app/src/main/res/layout/activity_mostra_mutante.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MutanteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MutanteController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app-xmen/XMen/app/src/main/java/com/example/xmen/CadastrarActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app-xmen/XMen/app/src/main/java/com/example/xmen/CadastrarActivity.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -97,16 +93,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/813cd010-c831-4406-886a-53ab0220ac67/console.sql">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="22" selection-start-column="22" selection-end-column="22" />
+              <caret column="23" lean-forward="true" selection-start-column="23" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="37" selection-start-column="37" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MutanteController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="259">
@@ -120,15 +125,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="211">
               <caret line="150" column="9" selection-start-line="150" selection-start-column="9" selection-end-line="150" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="879" column="20" selection-start-line="879" selection-start-column="20" selection-end-line="879" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -169,11 +165,11 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/UsuarioController.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_06_07_020600_create_usuarios_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_06_07_020623_create_mutantes_table.php" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/813cd010-c831-4406-886a-53ab0220ac67/console.sql" />
-        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.txt" />
         <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Storage.php" />
         <option value="$PROJECT_DIR$/routes/api.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/MutanteController.php" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/813cd010-c831-4406-886a-53ab0220ac67/console.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.txt" />
       </list>
     </option>
   </component>
@@ -351,17 +347,17 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37011000" />
+    <option name="totallyTimeSpent" value="38890000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="811" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.64253396" visible="true" weight="0.1888654" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6426593" visible="true" weight="0.1888654" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info id="Database" order="3" sideWeight="0.35746607" side_tool="true" visible="true" weight="0.1888654" />
-      <window_info active="true" anchor="bottom" id="Database Console" order="0" visible="true" weight="0.371266" />
+      <window_info id="Database" order="3" sideWeight="0.35734072" side_tool="true" visible="true" weight="0.1888654" />
+      <window_info active="true" anchor="bottom" id="Database Console" order="0" visible="true" weight="0.4864865" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" />
       <window_info anchor="bottom" id="Run" order="3" />
@@ -490,13 +486,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/storage/app/b1da9d4a21ef23e38fe8315e59244aa6.jpeg" />
     <entry file="file://$PROJECT_DIR$/storage/app/5e8bc72f05b566774457193f5699782c.png" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="10272" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/storage/app/33aff37800b867799c3af6bebf5bf25a.png" />
     <entry file="file://$PROJECT_DIR$/storage/app/public/3c8288e9514947c38beb2512a2738b3a.png" />
     <entry file="file://$PROJECT_DIR$/storage/app/df81aa44001b9a2eb0c89cb58a50350d.jpeg" />
@@ -530,24 +519,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="22" column="48" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/filesystems.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="601">
           <caret line="50" column="15" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ApiController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -572,17 +547,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/813cd010-c831-4406-886a-53ab0220ac67/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="22" selection-start-column="22" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MutanteController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="259">
           <caret line="90" column="59" selection-start-line="90" selection-start-column="59" selection-end-line="90" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="37" selection-start-column="37" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="22" column="48" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ApiController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/813cd010-c831-4406-886a-53ab0220ac67/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="23" lean-forward="true" selection-start-column="23" selection-end-column="23" />
         </state>
       </provider>
     </entry>
