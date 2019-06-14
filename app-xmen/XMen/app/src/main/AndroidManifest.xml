@@ -13,7 +13,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".MostraMutanteActivity"></activity>
+        <activity android:name=".BuscaActivity"></activity>
+        <activity android:name=".MostraMutanteActivity" />
         <activity android:name=".ListarActivity" />
         <activity android:name=".CadastrarActivity" />
         <activity android:name=".DashboardActivity" />
