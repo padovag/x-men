@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 class ApiController extends Controller {
-    public function enviaRespostaSucesso($dataset = null) {
+    public function enviaRespostaSucesso($dataset = null, $status = 200) {
         $dataset['resposta'] = 'Operação realizada com sucesso';
-        return response()->json($dataset, 200);
+        return response()->json($dataset, $status);
     }
 
     public function enviaRespostaErro($erro, $status_code = 503) {

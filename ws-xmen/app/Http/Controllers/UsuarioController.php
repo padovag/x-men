@@ -33,12 +33,12 @@ class UsuarioController extends ApiController {
     public function auth(Request $request) {
         $usuario = $this->buscaPorUsuario($request['usuario']);
         if (empty($usuario)) {
-            return $this->enviaRespostaErro('Usuario não encontrado');
+            return $this->enviaRespostaSucesso(['autorizado' => false, 'mensagem' => 'Usuario não encontrado']);
         }
 
         $autorizado = $this->verificaSenhaUsuario($usuario, $request['senha']);
         if (!$autorizado) {
-            return $this->enviaRespostaErro('Senha incorreta', 401);
+            return $this->enviaRespostaSucesso(['autorizado' => false, 'mensagem' =>'Senha incorreta']);
         }
 
         return $this->enviaRespostaSucesso(['autorizado' => $autorizado, 'usuario' => $usuario]);
