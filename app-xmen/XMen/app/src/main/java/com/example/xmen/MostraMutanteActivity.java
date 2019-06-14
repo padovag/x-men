@@ -1,7 +1,11 @@
 package com.example.xmen;
 
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -20,6 +24,8 @@ public class MostraMutanteActivity extends AppCompatActivity {
 
     TextView nomeView, habilidadeView;
     ImageView foto;
+    int id;
+    private AlertDialog alerta;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,7 +76,7 @@ public class MostraMutanteActivity extends AppCompatActivity {
         String nome = mutante.get("nome").toString();
         nomeView.setText(nome);
 
-        int id = (int) mutante.get("id");
+        id = (int) mutante.get("id");
         String imageUri = "http://10.0.2.2:8000/storage/mutante" + id + ".png";
         foto = (ImageView) findViewById(R.id.foto);
         Picasso.with(this).load(imageUri).into(foto);
@@ -78,5 +84,45 @@ public class MostraMutanteActivity extends AppCompatActivity {
         String habilidade = mutante.get("habilidade").toString();
         habilidadeView = (TextView) findViewById(R.id.habilidade);
         habilidadeView.setText(habilidade);
+    }
+
+    public void onClickDeletar(View view) {
+        deletar(id);
+    }
+
+    private void deletar(int id) {
+        String url = "http://10.0.2.2:8000/api/deletar?id=" + id;
+
+        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest
+                (Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
+
+                    @Override
+                    public void onResponse(JSONObject response) {
+                        criaAlertDialog("Deletado!", "Mutante deletado com sucesso");
+                    }
+                }, new Response.ErrorListener() {
+
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        criaAlertDialog("Não foi possível deletar", error.getMessage());
+                    }
+                });
+
+        MySingleton.getInstance(this).addToRequestQueue(jsonObjectRequest);
+    }
+
+    private void criaAlertDialog(String title, String message) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle(title);
+        builder.setMessage(message);
+
+        builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface arg0, int arg1) {
+                Intent it = new Intent(getBaseContext(), ListarActivity.class);
+                startActivity(it);
+            }
+        });
+        alerta = builder.create();
+        alerta.show();
     }
 }

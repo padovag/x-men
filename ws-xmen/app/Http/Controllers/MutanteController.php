@@ -69,13 +69,32 @@ class MutanteController extends ApiController {
     /**
      * @param Mutante $mutante
      */
-    public function salvaNoStorage(Mutante $mutante): void
-    {
+    private function salvaNoStorage(Mutante $mutante): void{
         $image = $mutante->foto;
         $image = str_replace('data:image/png;base64,', '', $image);
         $image = trim($image);
         $image = str_replace(' ', '+', $image);
         $imageName = 'mutante' . $mutante->id . '.' . 'png';
         Storage::disk('public')->put($imageName, base64_decode($image));
+    }
+
+    public function delete(Request $request){
+        try {
+            $mutante = $this->buscaMutantePorId($request['id']);
+            if (!$mutante) {
+                return $this->enviaRespostaErro('O mutante enviado não existe', 200);
+            }
+            $deletado = $mutante->delete();
+            if(!$deletado) {
+                return $this->enviaRespostaErro('Ocorreu um erro ao deletar o mutante', 200);
+            }
+            return $this->enviaRespostaSucesso(['mutante_id' => $request['id']]);
+        } catch (\Exception $exception) {
+            return $this->enviaRespostaErro($exception->getMessage());
+        }
+    }
+
+    private function buscaMutantePorId($id){
+        return Mutante::where('id', $id)->first();
     }
 }
