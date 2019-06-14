@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b6ef2c9-745e-4b9a-b472-3f9aa7c6310f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../app-xmen/XMen/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../app-xmen/XMen/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app-xmen/XMen/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app-xmen/XMen/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app-xmen/XMen/app/src/main/java/com/example/xmen/DashboardActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app-xmen/XMen/app/src/main/java/com/example/xmen/DashboardActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app-xmen/XMen/app/src/main/java/com/example/xmen/ListarActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app-xmen/XMen/app/src/main/java/com/example/xmen/ListarActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app-xmen/XMen/app/src/main/java/com/example/xmen/CadastrarActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../app-xmen/XMen/app/src/main/java/com/example/xmen/CadastrarActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app-xmen/XMen/app/src/main/res/layout/activity_cadastrar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../app-xmen/XMen/app/src/main/res/layout/activity_cadastrar.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -73,7 +70,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/813cd010-c831-4406-886a-53ab0220ac67/console.sql">
           <provider selected="true" editor-type-id="text-editor">
             <state>
@@ -94,11 +91,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/api.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="21" column="13" lean-forward="true" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="32" />
+            <state relative-caret-position="97">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
@@ -352,21 +349,21 @@
       <workItem from="1559871449336" duration="43000" />
       <workItem from="1559871672078" duration="9070000" />
       <workItem from="1560209514514" duration="35000" />
-      <workItem from="1560304621971" duration="7789000" />
+      <workItem from="1560304621971" duration="8920000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34912000" />
+    <option name="totallyTimeSpent" value="36043000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="811" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.64541835" visible="true" weight="0.18957011" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.64705884" visible="true" weight="0.18957011" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info id="Database" order="3" sideWeight="0.35458168" side_tool="true" visible="true" weight="0.18957011" />
-      <window_info active="true" anchor="bottom" id="Database Console" order="0" visible="true" weight="0.64295876" />
+      <window_info id="Database" order="3" sideWeight="0.3529412" side_tool="true" visible="true" weight="0.18957011" />
+      <window_info active="true" anchor="bottom" id="Database Console" order="0" visible="true" weight="0.29871976" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" />
       <window_info anchor="bottom" id="Run" order="3" />
@@ -532,24 +529,10 @@
     <entry file="file://$PROJECT_DIR$/storage/app/mutante10.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Storage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/filesystems.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="218">
           <caret line="50" column="15" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_07_020623_create_mutantes_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>
@@ -558,16 +541,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/storage/app/public/mutante12.png">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UsuarioController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="e#40#56#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MutanteController.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -579,17 +552,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="21" column="13" lean-forward="true" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/813cd010-c831-4406-886a-53ab0220ac67/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="23" lean-forward="true" selection-start-column="23" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_07_020623_create_mutantes_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UsuarioController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="e#40#56#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Storage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>

@@ -7,11 +7,11 @@
     tools:context=".CadastrarActivity">
 
     <TextView
-        android:id="@+id/textView6"
-        android:layout_width="269dp"
-        android:layout_height="107dp"
+        android:id="@+id/teste"
+        android:layout_width="299dp"
+        android:layout_height="91dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="36dp"
         android:layout_marginEnd="8dp"
         android:text="Cadastrar novos mutantes"
         android:textAlignment="center"
@@ -21,38 +21,39 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/nome"
         android:layout_width="365dp"
         android:layout_height="48dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="8dp"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.566"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        app:layout_constraintTop_toBottomOf="@+id/teste" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/habilidade"
         android:layout_width="360dp"
         android:layout_height="70dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="8dp"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintHorizontal_bias="0.571"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+        app:layout_constraintTop_toBottomOf="@+id/nome" />
 
     <ImageView
         android:id="@+id/foto"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="42dp"
         android:adjustViewBounds="true"
         android:cropToPadding="true"
@@ -60,7 +61,7 @@
         app:layout_constraintEnd_toStartOf="@+id/escolherImagem"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText4"
+        app:layout_constraintTop_toBottomOf="@+id/habilidade"
         tools:srcCompat="@tools:sample/avatars" />
 
     <Button
@@ -72,17 +73,19 @@
         android:onClick="onClickEscolherImagem"
         android:text="Escolher imagem"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText4" />
+        app:layout_constraintTop_toBottomOf="@+id/habilidade" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/cadastrar"
         android:layout_width="363dp"
         android:layout_height="62dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="48dp"
         android:layout_marginEnd="8dp"
+        android:onClick="onClickCadastrar"
         android:text="Cadastrar"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.531"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/escolherImagem" />
 
@@ -91,24 +94,24 @@
         android:layout_width="wrap_content"
         android:layout_height="15dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="9dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:text="Nome"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintHorizontal_bias="0.047"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        app:layout_constraintTop_toBottomOf="@+id/teste" />
 
     <TextView
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="15dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="88dp"
+        android:layout_marginTop="92dp"
         android:layout_marginEnd="8dp"
         android:text="Habilidades"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintHorizontal_bias="0.052"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        app:layout_constraintTop_toBottomOf="@+id/teste" />
 </android.support.constraint.ConstraintLayout>
