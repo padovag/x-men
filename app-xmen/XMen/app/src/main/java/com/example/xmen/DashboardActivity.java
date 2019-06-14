@@ -27,4 +27,8 @@ public class DashboardActivity extends AppCompatActivity {
         Intent it = new Intent(this, BuscaActivity.class);
         startActivity(it);
     }
+
+    public void onClickSair(View view) {
+        finishAffinity();
+    }
 }
